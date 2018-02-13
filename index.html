@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <title>Kata Exercise</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>Katas</h1>
+    <div id="d1"></div>
+    <div id="d2">
+        <h1>Step One</h1>
+        <p>Display Numbers 1-20 </p>
+    </div>
+    <div id="d3">
+        <h1>Step Two</h1>
+        <p>Display Even Numbers 1-20 </p>
+    </div>
+    <div id="d4">
+        <h1>Step Three</h1>
+        <p>Display Odd Numbers 1-20 </p>
+    </div>
+    <div id="d5">
+        <h1>Step Four</h1>
+        <p>Display Exponents 1 - 100</p>
+    </div>
+    <div id="d6">
+        <h1>Step Five</h1>
+        <p>Display Multiples of 5 - 100</p>
+    </div>
+    <div id="d7">
+        <h1>Step Six</h1>
+        <p>Display 1 - 20 backwards</p>
+    </div>
+    <div id="d8">
+        <h1>Step Seven</h1>
+        <p>Display 20 - 1 only Evens</p>
+    </div>
+    <div id="d9">
+        <h1>Step Eight</h1>
+        <p>Display 20 - 1 only Odds</p>
+    </div>
+    <div id="d10">
+        <h1>Step Nine</h1>
+        <p>Display Multiples of 5 100 -1</p>
+    </div>
+    <div id="d11">
+        <h1>Step Ten</h1>
+        <p>Display Exponents 100 - 1</p>
+    </div>
+    <div id="d12">
+        <h1>Step Eleven</h1>
+        <p>Dispaly the Numbers from the Array [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848,
+            179, 535, 940, 472]</p>
+    </div>
+    <div id="d13">
+        <h1>Step Twelve</h1>
+        <p>Dispaly the Even Numbers from the Array [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882,
+            848, 179, 535, 940, 472]</p>
+    </div>
+    <div id="d14">
+        <h1>Step Thirteen</h1>
+        <p>Dispaly the Odd Numbers from the Array [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848,
+            179, 535, 940, 472]</p>
+    </div>
+    <div id="d15">
+        <h1>Step Fourteen</h1>
+        <p>Dispaly the Exponent Numbers from the Array [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882,
+            848, 179, 535, 940, 472]</p>
+    </div>
+    <div id="d16">
+        <h1>Step Fifthteen</h1>
+        <p>Display The Sum of 20 - 1</p>
+    </div>
+    <div id="d17">
+        <h1>Step Sixteen</h1>
+        <p>Display the sum of all the elements in sampleArray.</p>
+    </div>
+    <div id="d18">
+        <h1>Step Seventeen</h1>
+        <p>Display the smallest element in sampleArray.</p>
+
+    </div>
+    <div id="d19">
+        <h1>Step Eighteen</h1>
+        <p>Display the largest element in sampleArray.</p>
+    </div>
+    <div id="d20">
+        <h1>Step Nineteen</h1>
+        <p>Display 20 solid gray rectangles, each 20px high and 100px wide.</p>
+    </div>
+    <div id="d21">
+        <h1>Step Twenty</h1>
+        <p>Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px </p>
+    </div>
+    <div id="d22">
+        <h1>Step Twenty One</h1>
+        <p>Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.</p>
+    </div>
+    <div id="d23">
+        <h1>Step Twenty Two</h1>
+        <p>As in #21, but alternate colors so that every other rectangle is red.</p>
+    </div>
+    <div id="d24">
+        <h1>Step Twenty Three</h1>
+        <p>As in #21, but color the rectangles with even widths red. </p>
+    </div>
+    <script>
+        const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940,
+            472
+        ];
+        const even = [];
+        for (i = 1; i <= 3; i++) {
+            // Create a div, with class "bar", and set the width to 100px.
+            var newElement = document.createElement("div");
+            newElement.className = "bar";
+
+
+
+            // Place a text label inside the new div.
+            var newText = document.createTextNode("Bar #" + i);
+            newElement.appendChild(newText);
+
+            // Put the new div on the page inside the existing element "d1".
+            var destination = document.getElementById("d1");
+            destination.appendChild(newElement);
+        }
+        /* Step 1 Display Numbers 1-20*/
+        for (i = 1; i <= 20; i++) {
+            var newElement = document.createElement("div");
+            newElement.className = "StepOne";
+
+            var newText = document.createTextNode(i);
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d2");
+            destination.appendChild(newElement);
+        }
+        /* Step 2 Even Numbers*/
+        for (i = 2; i <= 20; i += 2) {
+            var newElement = document.createElement("div");
+            newElement.className = "StepTwo";
+
+            var newText = document.createTextNode(i);
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d3");
+            destination.appendChild(newElement);
+        }
+        /* Step 3 Odd Numbers*/
+        for (i = 1; i <= 20; i++) {
+            if (i % 2 !== 0) {
+
+
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepThree";
+
+                var newText = document.createTextNode(i);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d4");
+                destination.appendChild(newElement);
+            }
+        }
+
+        /* Step 4 Display Exponents 1 to 100 */
+        for (var i = 1; i <= 10; i++) {
+
+
+            var newElement = document.createElement("div");
+            newElement.className = "StepFour";
+
+            var newText = document.createTextNode(i * i);
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d5");
+            destination.appendChild(newElement);
+        }
+        /* Step 5 Display Multiples of 5 to 100 */
+
+        for (var i = 1; i < 100; i++) {
+            if (i % 5 == 0) {
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepFive";
+
+                var newText = document.createTextNode(i);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d6");
+                destination.appendChild(newElement);
+            }
+        }
+        /* Step 6 Numbers backwards 20 - 1*/
+        for (i = 20; i >= 1; i--) {
+
+
+            var newElement = document.createElement("div");
+            newElement.className = "StepSix";
+
+            var newText = document.createTextNode(i);
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d7");
+            destination.appendChild(newElement);
+
+        }
+        /* Step 7 Even Numbers from 20 - 1*/
+        for (i = 20; i >= 1; i--) {
+            if (i % 2 === 0) {
+                var newElement = document.createElement("div");
+                newElement.className = "StepSeven";
+
+                var newText = document.createTextNode(i);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d8");
+                destination.appendChild(newElement);
+            }
+        }
+        /* Step 8 Odd Numbers 20 - 1*/
+        for (i = 20; i >= 1; i--) {
+            if (i % 2 !== 0) {
+
+
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepEight";
+
+                var newText = document.createTextNode(i);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d9");
+                destination.appendChild(newElement);
+            }
+        }
+        /* Step 9 Multiplies of 5 100 to 1*/
+        for (i = 100; i >= 1; i--) {
+            if (i % 5 == 0) {
+
+
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepNine";
+
+                var newText = document.createTextNode(i);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d10");
+                destination.appendChild(newElement);
+            }
+        }
+        /* Step 10 Display Exponents of 100 to 1 */
+
+        for (var i = 10; i >= 1; i--) {
+
+
+            var newElement = document.createElement("div");
+            newElement.className = "StepTen";
+
+            var newText = document.createTextNode(i * i);
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d11");
+            destination.appendChild(newElement);
+
+        }
+        /* Step 11 Display The Numbers from the Array*/
+        for (var i = 0; i <= sampleArray.length; i++) {} {
+            var newElement = document.createElement("div");
+            newElement.className = "StepEleven";
+
+            var newText = document.createTextNode(sampleArray);
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d12");
+            destination.appendChild(newElement);
+        }
+        /* Step 12 Display Even Numbers from the Array*/
+        for (var i = 0; i < sampleArray.length; i++) {
+            if ((sampleArray[i] % 2) === 0) {
+                even.push(sampleArray[i]);
+
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepTwelve";
+
+                var newText = document.createTextNode(even);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d13");
+                destination.appendChild(newElement);
+                even.pop(sampleArray[i]);
+            }
+
+        }
+        /* Step 13 Display Odd Numbers from the Array*/
+        for (var i = 0; i <= sampleArray.length; i++) {
+            if ((sampleArray[i] % 2) !== 0) {
+                even.push(sampleArray[i]);
+
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepThirteen";
+
+                var newText = document.createTextNode(even);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d14");
+                destination.appendChild(newElement);
+                even.pop(sampleArray[i]);
+            }
+
+        }
+        /* Step 14 Display Square Numbers from the Array*/
+        for (var i = 0; i < sampleArray.length; i++) {
+            if ((sampleArray[i] * sampleArray[i]) !== 0) {
+                even.push(sampleArray[i]);
+
+
+                var newElement = document.createElement("div");
+                newElement.className = "StepFourteen";
+
+                var newText = document.createTextNode(even * even);
+                newElement.appendChild(newText);
+
+                var destination = document.getElementById("d15");
+                destination.appendChild(newElement);
+                even.pop(sampleArray[i]);
+            }
+
+        }
+        /* 15 Display the Sum of 1 - 20 */
+        let tot = 0;
+        for (let i = 0; i <= 20; i++) {
+            tot = i + tot;
+
+
+
+            var newElement = document.createElement("div");
+            newElement.className = "StepFifthteen";
+            var newText = document.createTextNode(tot);
+            newElement.appendChild(newText);
+            var destination = document.getElementById("d16");
+            destination.appendChild(newElement);
+
+        }
+        /* 16 Display the sum of all the elements in sampleArray */
+        let total = 0;
+        for (let i = 0; i < sampleArray.length; i++) {
+            total += sampleArray[i];
+
+        }
+        var newElement = document.createElement("div");
+            newElement.className = "StepSixteen";
+            var newText = document.createTextNode(total);
+            newElement.appendChild(newText);
+            var destination = document.getElementById("d17");
+            destination.appendChild(newElement);
+        /* 17 Display the smallest element in sampleArray */
+        let smallNum = sampleArray[0];
+        for (let i = 1; i < sampleArray.length; i++) {
+           
+                if (sampleArray[i] < smallNum) {
+                    smallNum = sampleArray[i];
+            }
+        }
+                
+        var newElement = document.createElement("div");
+            newElement.className = "StepSeventeen";
+            var newText = document.createTextNode(smallNum);
+            newElement.appendChild(newText);
+            var destination = document.getElementById("d18");
+            destination.appendChild(newElement);
+        /* 18 Display the largest element in sampleArray.*/
+        let largeNum = sampleArray[0];
+        for (let i = 1; i < sampleArray.length; i++) {
+            if (sampleArray[i] > largeNum) {
+                largeNum = sampleArray[i];
+                
+            }
+            }
+        var newElement = document.createElement("div");
+            newElement.className = "StepNineteen";
+            var newText = document.createTextNode(largeNum);
+            newElement.appendChild(newText);
+            var destination = document.getElementById("d19");
+            destination.appendChild(newElement);
+        /* 19 Display 20 solid gray rectangles, each 20px high and 100px wide.*/
+
+        for (i = 1; i <= 20; i++) {
+            
+            var newElement = document.createElement("div");
+            
+            newElement.style.backgroundColor = "grey";
+            newElement.style.width = 100 + "px";
+            newElement.style.height = 20 + "px";
+
+            // Place a text label inside the new div.
+            var newText = document.createTextNode("box" + i);
+            newElement.appendChild(newText);
+
+            // Put the new div on the page inside the existing element "d1".
+            var destination = document.getElementById("d20");
+            destination.appendChild(newElement);
+        }
+
+        /* 20 Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px */
+
+      let wide = 100;
+
+        for (i = 0; i <= 20; i++) {
+            wide += 5;
+            var newElement = document.createElement("div");
+         
+            newElement.style.width = wide + "px";
+            newElement.style.height = 20 + "px";
+            newElement.style.backgroundColor = ("grey");
+            
+            
+
+
+            
+          
+            var newText = document.createTextNode("box");
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d21");
+            destination.appendChild(newElement);
+
+
+        }
+
+        /* 21 Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.*/
+        
+        for (i = 0; i <= 20; i++) {
+            let width = sampleArray[i];
+              
+            
+
+
+            var newElement = document.createElement("div");
+
+            newElement.style.backgroundColor = "grey";
+                newElement.style.width = width + "px";
+
+
+            var newText = document.createTextNode("box");
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d22");
+            destination.appendChild(newElement);
+        }
+        /* 22 As in #21, but alternate colors so that every other rectangle is red*/
+
+        for (i = 1; i <= 20; i++) {
+
+            wide = sampleArray[i];
+
+            var newElement = document.createElement("div");
+
+            newElement.className = "StepTwentyTwo";
+
+            newElement.style.width = (wide + "px");
+            var newText = document.createTextNode("box");
+            newElement.appendChild(newText);
+
+            var destination = document.getElementById("d23");
+            destination.appendChild(newElement);
+
+            newElement.style.backgroundColor = ("grey");
+            if (i % 2 == 0) {
+                newElement.style.backgroundColor = ("red");
+            }
+          
+            // Add text into the new element //
+        }
+        /* 23 As in #21, but color the rectangles with even widths red. */
+
+        for (i = 0; i <= 20; i++) {
+
+            wide = sampleArray[i];
+
+            var newElement = document.createElement("div");
+
+            var newText = document.createTextNode("box");
+            newElement.appendChild(newText);
+
+         
+
+            newElement.style.width = (wide + "px");
+            newElement.style.backgroundColor = ("grey");
+            if (wide % 2 === 0) {
+                newElement.style.backgroundColor = ("red");
+            }
+
+            var destination = document.getElementById("d24");
+            destination.appendChild(newElement);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+
+.bar {
+    background: gray;
+    height: 20px;
+    margin: 10px;
+    color: white;
+} 
+.StepOne {
+    display: inline;
+    margin: 2px;
+}
+.StepTwo {
+    display: inline;
+    margin: 2px;
+    
+}
+.StepThree {
+    display: inline;
+    margin: 2px;
+}
+.StepFour {
+    display:inline;
+    margin: 2px;
+}
+.StepFive {
+    display: inline;
+    margin: 2px;
+}
+.StepSix {
+    display: inline;
+    margin: 2px;
+}
+.StepSeven {
+    display: inline;
+    margin: 2px;
+}
+.StepEight {
+    display: inline;
+    margin: 2px;
+}
+.StepNine {
+    display: inline;
+    margin: 2px;
+}
+.StepTen {
+    display: inline;
+    margin: 2px;
+}
+.StepEleven {
+    display: inline;
+    margin: 2px;
+}
+.stepTwelve {
+    display: inline;
+    margin: 2px;
+}
+.stepThirteen {
+    display: inline;
+    margin: 2px;
+}
+div {
+    /* display: inline; */
+    margin: 2px;
+} 
+
